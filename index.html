@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+	<link rel="apple-touch-startup-image" href="img/apple-touch-startup-image-320x460.png" />
+	<meta name="mobile-web-app-capable" content="yes">
+	<link rel="shortcut icon" sizes="196x196" href="img/196x196.png">
+	<link rel="shortcut icon" sizes="128x128" href="img/128x128.png">
+    <!-- Your app title -->
+    <title>Galaxy</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700' rel='stylesheet' type='text/css'>
+    <!-- Path to Framework7 Library CSS, Material Theme -->
+    <link rel="stylesheet" href="css/framework7.material.min.css">
+    <!-- Path to Framework7 color related styles, Material Theme -->
+    <link rel="stylesheet" href="css/framework7.material.colors.min.css">
+    <link rel="stylesheet" href="font/flaticon.css">
+	<link rel="stylesheet" href="css/swipebox.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/my-app.css">
+</head>
+
+<body class="theme-blue">
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div style="" class="panel panel-left panel-cover">
+		<div data-page="panel-left" class="view navbar-fixed">
+			<div class="pages">
+				<div data-page="panel-left" class="page">
+					<div class="navbar">
+						<div class="navbar-inner">
+							<div class="center">Menu</div>
+						</div>
+					</div>
+					<div class="page-content">
+						<div class="content-block-title">Browse menu</div>
+						<div class="list-block">
+							<ul>
+								<!--<li>-->
+									<!--<a href="about.html" class="item-link close-panel">-->
+										<!--<div class="item-content">-->
+											<!--<div class="item-media"><i class="flaticon-user"></i></div>-->
+											<!--<div class="item-inner">-->
+												<!--<div class="item-title text-small">About</div>-->
+											<!--</div>-->
+										<!--</div>-->
+									<!--</a>-->
+								<!--</li>-->
+								<!--<li>-->
+									<!--<a href="features.html" class="item-link close-panel">-->
+										<!--<div class="item-content">-->
+											<!--<div class="item-media"><i class="flaticon-star"></i></div>-->
+											<!--<div class="item-inner">-->
+												<!--<div class="item-title text-small">Features</div>-->
+												<!--<div class="item-after"><span class="badge bg-green">15</span></div>-->
+											<!--</div>-->
+										<!--</div>-->
+									<!--</a>-->
+								<!--</li>-->
+								
+								<li>
+									<a href="add_place.html" class="item-link close-panel">
+										<div class="item-content">
+											<div class="item-media"><i class="flaticon-photo"></i></div>
+											<div class="item-inner">
+												<div class="item-title text-small">Add Location</div>
+											</div>
+										</div>
+									</a>
+								</li>
+                                <li>
+                                    <a href="places.html" class="item-link close-panel">
+                                        <div class="item-content">
+                                            <div class="item-media"><i class="flaticon-photo"></i></div>
+                                            <div class="item-inner">
+                                                <div class="item-title text-small">View Location</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+								<!--<li>-->
+									<!--<a href="videos.html" class="item-link close-panel">-->
+										<!--<div class="item-content">-->
+											<!--<div class="item-media"><i class="flaticon-play"></i></div>-->
+											<!--<div class="item-inner">-->
+												<!--<div class="item-title text-small">Videos</div>-->
+											<!--</div>-->
+										<!--</div>-->
+									<!--</a>-->
+								<!--</li>-->
+								<!--<li>-->
+									<!--<a href="blog.html" class="item-link close-panel">-->
+										<!--<div class="item-content">-->
+											<!--<div class="item-media"><i class="flaticon-agenda"></i></div>-->
+											<!--<div class="item-inner">-->
+												<!--<div class="item-title text-small">Blog</div>-->
+											<!--</div>-->
+										<!--</div>-->
+									<!--</a>-->
+								<!--</li>-->
+								<!--<li>-->
+									<!--<a href="contact.html" class="item-link close-panel">-->
+										<!--<div class="item-content">-->
+											<!--<div class="item-media"><i class="flaticon-paper-plane"></i></div>-->
+											<!--<div class="item-inner">-->
+												<!--<div class="item-title text-small">Contact</div>-->
+											<!--</div>-->
+										<!--</div>-->
+									<!--</a>-->
+								<!--</li>-->
+								<!--<li>-->
+									<!--<a href="user-list.html" class="item-link close-panel">-->
+										<!--<div class="item-content">-->
+											<!--<div class="item-media"><i class="flaticon-users"></i></div>-->
+											<!--<div class="item-inner">-->
+												<!--<div class="item-title text-small">User list</div>-->
+											<!--</div>-->
+										<!--</div>-->
+									<!--</a>-->
+								<!--</li>-->
+								<!--<li>-->
+									<!--<a href="messages.html" class="item-link close-panel">-->
+										<!--<div class="item-content">-->
+											<!--<div class="item-media"><i class="flaticon-notification"></i></div>-->
+											<!--<div class="item-inner">-->
+												<!--<div class="item-title text-small">Messages</div>-->
+											<!--</div>-->
+										<!--</div>-->
+									<!--</a>-->
+								<!--</li>-->
+								<!--<li>-->
+									<!--<a href="tabs.html" class="item-link close-panel">-->
+										<!--<div class="item-content">-->
+											<!--<div class="item-media"><i class="flaticon-tabs"></i></div>-->
+											<!--<div class="item-inner">-->
+												<!--<div class="item-title text-small">Tabs</div>-->
+											<!--</div>-->
+										<!--</div>-->
+									<!--</a>-->
+								<!--</li>-->
+								<!--<li>-->
+									<!--<a href="toggle.html" class="item-link close-panel">-->
+										<!--<div class="item-content">-->
+											<!--<div class="item-media"><i class="flaticon-toggle"></i></div>-->
+											<!--<div class="item-inner">-->
+												<!--<div class="item-title text-small">Toggle</div>-->
+											<!--</div>-->
+										<!--</div>-->
+									<!--</a>-->
+								<!--</li>-->
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <!-- Views -->
+    <div class="views">
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <!-- Pages container, because we use fixed navbar and toolbar, it has additional appropriate classes-->
+            <div class="pages">
+                <!-- Page, "data-page" contains page name -->
+                <div data-page="index" class="page">
+                    <!-- Scrollable page content -->
+                    <div class="page-content bg-home">
+                        <div class="overlay"></div>
+						<div class="content-block text-center">
+							<!--<img class="logo" src="img/logo.png" alt="Galaxy">-->
+							<div class="offset-bottom-75"></div>
+							<h4>Welcome!</h4>
+							<div class="slogan">Simple Tourguide App.</div>
+						</div>
+						<div class="home-footer">
+							<!--<a href="login.html" id="login">Login</a>-->
+							<!--<a href="register.html" id="signup">Sign up</a>-->
+						</div>file:///root/Downloads/uzair.sql
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+	<script type="text/javascript" src="js/jquery.swipebox.js"></script>
+    <script type="text/javascript" src="js/jquery.fitvids.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/my-app.js"></script>
+    <script>
+        var pathToServer = "http://devlabx.com/uzairT/index.php/home/android";
+            var auth = window.localStorage.getItem('admin');
+            if(auth == null){
+                mainView.router.loadPage('login.html');
+            }else{
+
+            }
+
+        function getPlaces(){
+            $.post(pathToServer+"/getLocation",{},function(e){
+                $("#places").html(e);
+            });
+        }
+        function addPlace(){
+            var name = $("#name").val();
+            var subtitle = $("#subtitle").val();
+            var desc = $("#desc").val();
+            var type = $("#type").val();
+            $.post(pathToServer+"/addLocation",{title:name,subtitle:subtitle,desc:desc,type:type},function(e){
+                if(e == true){
+                    $("#name").val('');
+                    $("#subtitle").val('');
+                    $("#desc").val('');
+                    $("#type").val('');
+                    $("#error").html("Added Successfuly");
+                }
+            });
+        }
+        function login(){
+            var user = $("#user").val();
+            var pwd = $("#pwd").val();
+            $.post(pathToServer + "/login",{user:user,pwd:pwd},function(e){
+                console.log(e);
+                if(e == "false"){
+                    $("#error").html("Invalid Username OR Password");
+                }else{
+                    var jsonData = IsJsonString(e);
+                    if(jsonData == true){
+                        jsonData = JSON.parse(e);
+                        window.localStorage.setItem('admin',jsonData);
+                        mainView.router.loadPage('index.html');
+                    }else{
+                        $("#error").html("Something went wrong");
+                    }
+                }
+
+            });
+        }
+        function IsJsonString(str) {
+            try {
+                JSON.parse(str);
+            } catch (e) {
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>
