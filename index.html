@@ -198,7 +198,8 @@
     <!-- Path to your app js-->
     <script type="text/javascript" src="js/my-app.js"></script>
     <script>
-        var pathToServer = "http://devlabx.com/uzairT/index.php/home/android";
+//        var pathToServer = "http://devlabx.com/uzairT/index.php/home/android";
+        var pathToServer = "http://127.0.0.1/uzair/index.php/home/android";
             var auth = window.localStorage.getItem('admin');
             if(auth == null){
                 mainView.router.loadPage('login.html');
@@ -216,12 +217,16 @@
             var subtitle = $("#subtitle").val();
             var desc = $("#desc").val();
             var type = $("#type").val();
-            $.post(pathToServer+"/addLocation",{title:name,subtitle:subtitle,desc:desc,type:type},function(e){
-                if(e == true){
+            var mobile = $("#mobile").val();
+            var long = $("#long").val();
+            var lat = $("#lat").val();
+            $.post(pathToServer+"/addLocation",{long:long,lat:lat,mobile:mobile,title:name,subtitle:subtitle,desc:desc,type:type},function(e){
+                if(e == "true" || e == true){
                     $("#name").val('');
                     $("#subtitle").val('');
                     $("#desc").val('');
                     $("#type").val('');
+                    $("#mobile").val('');
                     $("#error").html("Added Successfuly");
                 }
             });
@@ -254,6 +259,25 @@
             }
             return true;
         }
+        function reloadLocation(){
+            getLocation();
+        }
+
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } else {
+                alert("Geolocation is not supported by this device.")
+            }
+        }
+        function showPosition(position) {
+            $("#long").val(position.coords.longitude);
+            $("#lat").val(position.coords.latitude);
+            var latlon = position.coords.latitude + "," + position.coords.longitude;
+            var img_url = "https://www.google.com/maps/embed/v1/place?key=AIzaSyAmWltubueal0heZ8TpeBrT_mIWSEfaFSE&q=" + latlon + "&zoom=18";
+            $("#ourLocation").attr('src', img_url);
+        }
+
     </script>
 </body>
 </html>
