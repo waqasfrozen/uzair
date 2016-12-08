@@ -44,27 +44,7 @@
 						<div class="content-block-title">Browse menu</div>
 						<div class="list-block">
 							<ul>
-								<!--<li>-->
-									<!--<a href="about.html" class="item-link close-panel">-->
-										<!--<div class="item-content">-->
-											<!--<div class="item-media"><i class="flaticon-user"></i></div>-->
-											<!--<div class="item-inner">-->
-												<!--<div class="item-title text-small">About</div>-->
-											<!--</div>-->
-										<!--</div>-->
-									<!--</a>-->
-								<!--</li>-->
-								<!--<li>-->
-									<!--<a href="features.html" class="item-link close-panel">-->
-										<!--<div class="item-content">-->
-											<!--<div class="item-media"><i class="flaticon-star"></i></div>-->
-											<!--<div class="item-inner">-->
-												<!--<div class="item-title text-small">Features</div>-->
-												<!--<div class="item-after"><span class="badge bg-green">15</span></div>-->
-											<!--</div>-->
-										<!--</div>-->
-									<!--</a>-->
-								<!--</li>-->
+
 								
 								<li>
 									<a href="add_place.html" class="item-link close-panel">
@@ -86,76 +66,18 @@
                                         </div>
                                     </a>
                                 </li>
-								<!--<li>-->
-									<!--<a href="videos.html" class="item-link close-panel">-->
-										<!--<div class="item-content">-->
-											<!--<div class="item-media"><i class="flaticon-play"></i></div>-->
-											<!--<div class="item-inner">-->
-												<!--<div class="item-title text-small">Videos</div>-->
-											<!--</div>-->
-										<!--</div>-->
-									<!--</a>-->
-								<!--</li>-->
-								<!--<li>-->
-									<!--<a href="blog.html" class="item-link close-panel">-->
-										<!--<div class="item-content">-->
-											<!--<div class="item-media"><i class="flaticon-agenda"></i></div>-->
-											<!--<div class="item-inner">-->
-												<!--<div class="item-title text-small">Blog</div>-->
-											<!--</div>-->
-										<!--</div>-->
-									<!--</a>-->
-								<!--</li>-->
-								<!--<li>-->
-									<!--<a href="contact.html" class="item-link close-panel">-->
-										<!--<div class="item-content">-->
-											<!--<div class="item-media"><i class="flaticon-paper-plane"></i></div>-->
-											<!--<div class="item-inner">-->
-												<!--<div class="item-title text-small">Contact</div>-->
-											<!--</div>-->
-										<!--</div>-->
-									<!--</a>-->
-								<!--</li>-->
-								<!--<li>-->
-									<!--<a href="user-list.html" class="item-link close-panel">-->
-										<!--<div class="item-content">-->
-											<!--<div class="item-media"><i class="flaticon-users"></i></div>-->
-											<!--<div class="item-inner">-->
-												<!--<div class="item-title text-small">User list</div>-->
-											<!--</div>-->
-										<!--</div>-->
-									<!--</a>-->
-								<!--</li>-->
-								<!--<li>-->
-									<!--<a href="messages.html" class="item-link close-panel">-->
-										<!--<div class="item-content">-->
-											<!--<div class="item-media"><i class="flaticon-notification"></i></div>-->
-											<!--<div class="item-inner">-->
-												<!--<div class="item-title text-small">Messages</div>-->
-											<!--</div>-->
-										<!--</div>-->
-									<!--</a>-->
-								<!--</li>-->
-								<!--<li>-->
-									<!--<a href="tabs.html" class="item-link close-panel">-->
-										<!--<div class="item-content">-->
-											<!--<div class="item-media"><i class="flaticon-tabs"></i></div>-->
-											<!--<div class="item-inner">-->
-												<!--<div class="item-title text-small">Tabs</div>-->
-											<!--</div>-->
-										<!--</div>-->
-									<!--</a>-->
-								<!--</li>-->
-								<!--<li>-->
-									<!--<a href="toggle.html" class="item-link close-panel">-->
-										<!--<div class="item-content">-->
-											<!--<div class="item-media"><i class="flaticon-toggle"></i></div>-->
-											<!--<div class="item-inner">-->
-												<!--<div class="item-title text-small">Toggle</div>-->
-											<!--</div>-->
-										<!--</div>-->
-									<!--</a>-->
-								<!--</li>-->
+                                <li>
+                                    <a onclick="logout()" class="item-link close-panel">
+                                        <div class="item-content">
+                                            <div class="item-media"><i class="flaticon-photo"></i></div>
+                                            <div class="item-inner">
+                                                <div class="item-title text-small">Logout</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                
 							</ul>
 						</div>
 					</div>
@@ -250,6 +172,10 @@
                 }
 
             });
+        }
+        function logout(){
+            window.localStorage.removeItem('admin');
+            window.location.reload();
         }
         function IsJsonString(str) {
             try {
