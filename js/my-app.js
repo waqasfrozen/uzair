@@ -28,9 +28,12 @@ $$(document).on('pageInit', function (e) {
 	var page = e.detail.page;
 	if (page.name === 'login') {
 		myApp.params.swipePanel = false;
-	} else if(page.name === 'register') {
-		myApp.params.swipePanel = false;
-	} else if(page.name === 'remember') {
+	} else if(page.name === 'add_place') {
+        reloadLocation();
+    } else if(page.name === 'view_place') {
+		getPlaces();
+        reloadLocation();
+    } else if(page.name === 'remember') {
 		myApp.params.swipePanel = false;
 	} else {
 		myApp.params.swipePanel = 'left';

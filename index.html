@@ -186,6 +186,7 @@
             return true;
         }
         function reloadLocation(){
+
             getLocation();
         }
 
@@ -194,6 +195,7 @@
                 navigator.geolocation.getCurrentPosition(showPosition);
             } else {
                 alert("Geolocation is not supported by this device.")
+//                $("#LocationDiv").html("Geolocation is not supported by this device.");
             }
         }
         function showPosition(position) {
@@ -202,6 +204,8 @@
             var latlon = position.coords.latitude + "," + position.coords.longitude;
             var img_url = "https://www.google.com/maps/embed/v1/place?key=AIzaSyAmWltubueal0heZ8TpeBrT_mIWSEfaFSE&q=" + latlon + "&zoom=18";
             $("#ourLocation").attr('src', img_url);
+            $("#loaading").css('display', "none");
+
         }
 
     </script>
