@@ -184,7 +184,6 @@
             return true;
         }
         function reloadLocation(){
-
             getLocation();
         }
 
@@ -208,7 +207,7 @@
         function initMap(lat,long) {
             var map = new google.maps.Map(document.getElementById('map'), {
                 center: {lat: lat, lng: long},
-                zoom: 8,
+                zoom: 8
             });
             var myMarker = new google.maps.Marker({
                 map: map,

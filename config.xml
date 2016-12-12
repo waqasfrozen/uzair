@@ -6,7 +6,7 @@
         id        = "com.phonegap.karachitourguidetest"
         version   = "1.0.0">
 
-    <name>Karachi TourGuide</name>
+    <name>Karachi TourGuide (Admin)</name>
 
     <description>
         Get ready to rock your tours
