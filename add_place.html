@@ -55,6 +55,7 @@
                                     <div class="item-title label"></div>
                                     <div class="item-input item-input-field">
                                         <select id="type">
+                                            <option>Select Category</option>
                                             <option value="hospital">Hospital</option>
                                             <option value="restaurant">Restaurant</option>
                                             <option value="hotel">Hotel</option>
@@ -85,8 +86,9 @@
 					<a onclick="addPlace()" class="no-border-raduis button button-fill color-red">Add Place</a>
 				</p>
 			</div>
-			<div class="content-block-title text-uppercase text-bold" onload="reloadLocation()" onclick="reloadLocation()">Get location</div>
+
 			<div class="content-block" id="LocationDiv" style="text-align:center;">
+                <span class="btn btn-info" onclick="reloadLocation()">Get location</span>
                 <img src="img/ajax-loader.gif" id="loaading" alt="Loading...!!!"/>
                 <div style="height:300px" id="map"></div>
 			</div>
